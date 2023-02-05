@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outrs formatações</title>
+    <title>Listas</title>
 </head>
+
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte / Pré-Formatação</h2>
-    <p>O comando <code>documento.getElementById('teste')</code> é escrito em liguagem <pre>
-        JavaScript</p>
-        <code>
-num = int(input('Digite um número'))
-if num % 2 == 0:
-    print(f'O número {num} é PAR')
-else:
-    print(f'O número {num} é ÍMPAR')
-print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o Computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML e CSS:</p>
-    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
-        A lingua que nós, brasileiros, entendemos e usamos para nos comunicar é o prtuguês. A liguagem que nós, criadores de conteúdo para a web, entendemos e usamos para nos comunicar com o navegador é a HTML.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto ivertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I"> <!-- types= 1, A, a, I, i-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"> <!-- types = disc , circule, square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a" start="2">
+            <li>Ruby</li>
+            <li>Python</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="3">
+            <li>JavaScript</li>
+            <li>C#</li>
+            <li>PHP</li>
+        </ol>
+    </ol>
+    <h2>Meus Video Games favoritos</h2>
+    <ol>
+        <li>Playstation 2</li>
+        <ul type="square">
+            <li>GTA SA</li>
+            <li>Midnithg Club</li>
+            <li>Call of Duty</li>
+                <ul type="circle">
+                    <li>Word at War 2</li>
+                </ul>
+            <li>Crash</li>
+        </ul>
+        <li>Xbox360</li>
+        <ul type="square">
+            <li>Minecraft</li>
+            <li>Call of Duty</li>
+                <ul type="circle">
+                    <li>Black Ops 1</li>
+                    <li>Black Ops 2</li>
+                    <li>Modern Warfare2</li>
+                </ul>
+            <li>GTA V</li>
+            <li>Forza Horizon 3</li>
+        </ul>
+        <li>Xbox One</li>
+        <ul type="square">
+            <li>SIMTE</li>
+            <li>GTA V</li>
+            <li>Call of Duty</li>
+                <ul type="circle">
+                    <li>Warzone</li>
+                    <li>Black Ops 3</li>
+                </ul>
+            <li>Forza Horizon 5</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
 </body>
+
 </html>
