@@ -8,59 +8,160 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Site Android</title>
     <style>
-        body{
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @font-face {
+            font-family: 'android';
+            src: url('fontes/idroid.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #9ef8c7;
+            background-color: #EBE5C5;
         }
 
-        header{
-            padding: 10px;
-            background-image: linear-gradient(to bottom, #3aa76b, #249657, #1a5c38);
+        header {
+            padding: 10px 10px 10px 10px;
+            background-image: linear-gradient(to bottom, #3aa76b, #0e703a, #0c341e);
             text-align: center;
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
-        header > h1{
-            font-weight: bold;
-            margin: 20px 0px 50px 0px;            
+        header>h1 {
+            padding: 0px 10px 10px 10px;
+            font-family: 'Bebas Neue', cursive, sans-serif;
+            font-size: 3em;
+            font-weight: 400;
+            margin: 30px 0px 10px 0px;
+            text-shadow: 1px 1px 3px black;
         }
 
-        header > h2{
-            color: rgba(255, 255, 255, 0.679);
-            margin: 0px 0px 36px 0px; 
+        header>h2 {
+            margin: auto;
+            font-weight: 500;
+            margin-bottom: 16px;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 600px;
+            color: rgba(255, 255, 255, 0.941);
+            font-size: 20px;
+            text-shadow: 1px 1px 4px black;
         }
 
-        header > nav{
+        header>nav {
+            padding: 50px 0px 0px 0px;
             text-align: left;
-            font-weight: bold;
+            font-weight: 600
         }
 
-        nav > a{
+        nav>a {
             text-decoration: none;
-            margin-left: 10px;
-            color: white;
+            margin: 1px;
+            padding: 6px;
+            color: #5dffa6;
         }
 
-        nav > a:hover{
-            color: greenyellow;
+        nav>a:hover {
+            color: rgb(255, 255, 255);
+            background-color: #1a5c38;
+            padding: 6px;
+            border-radius: 10px;
+        }
+
+        main {
+            margin: auto;
+            margin: 0px 240px 20px 240px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        section>h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 26px;
+            font-weight: 500;
+            font-family: 'android', Arial, Helvetica, sans-serif;
+            color: #003a1a;
+        }
+
+        section>h2 {
+            font-weight: 500;
+            font-family: 'android', Arial, Helvetica, sans-serif;
+            color: #006f32;
+            padding: 0 0 0 6px;
+            background-image: linear-gradient(to right, #00ff5154, #54d9545c, #95ff9500);
+        }
+
+        article>p {
+            line-height: 29px;
+            word-spacing: 2px;
+            font-size: 16px;
+            text-indent: 30px;
+        }
+        
+
+        article > img{
+            width: 1000px;
+        }
+
+        p>span {
+            font-weight: bold;
+            color: #006f32;
+        }
+
+        p>a {
+            padding: 3px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #00411d;
+            background-color: #00b33983;
+        }
+
+        p>a:hover {
+            text-decoration: underline;
+            border-radius: 2px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
-        <h2>Tudo aquilo que você sempre quis saber sobre o mundo <br> Tech, em um único lugar
+        <h1>Curiosidades de Tecnologia</h1>
+        <h2>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
         </h2>
         <nav>
             <a href="">Home</a>
             <a href="">Notícias</a>
             <a href="">Curiosidades</a>
-            <a href="">Fale Conosco</a>
         </nav>
     </header>
+    <main>
+        <section>
+            <h1>História do Mascote do Android</h1>
+            <article>
+                <p>Provavelmente você sabe que o sistema operacional <span>Android</span>, mantido pelo
+                    <span>Google</span> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez
+                    você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe
+                    esse artigo para aprender muita coisa sobre esse robozinho.</p>
+            </article>
+        </section>
+        <section>
+            <h2>A PRIMEIRA VERSÃO</h2>
+            <article>
+                <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a
+                        href="">Dan Morrill&#x1F517</a>. Ele conta que abriu o <a href="">Inkscape&#x1F517 </a>
+                    (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era
+                    apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa
+                    para a criação de um mascote.</p>
+                <img src="imagens/dan-droids.png" alt="">
+                <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <span>Dandroids</span>.</p>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
