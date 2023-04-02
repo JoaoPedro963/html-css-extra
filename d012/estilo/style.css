@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Lobster', cursive;
+    --fonte3: 'Passion One', cursive;
+
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +19,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -17,8 +29,10 @@ header{
 }
 
 header > h1{
+    font-size: 4em;
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
 }
 
 header > p{
@@ -36,6 +50,8 @@ header a:hover, footer a:hover{
 }
 
 section{
+    font-family: var(--fonte2);
+    font-size: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -55,6 +71,7 @@ section.imagem{
 section.imagem > p {
     width: 350px;
     background-color: rgba(0, 0, 0, 0.245);
+    padding: 9px;
 }
 
 footer{
